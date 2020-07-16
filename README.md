@@ -1,68 +1,127 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Thinkful Full Stack Capstone - Bloom App Client
 
-## Available Scripts
+## Programmer
+Chanda Hubbard
 
-In the project directory, you can run:
+## Summary
 
-### `npm start`
+<!-- While enrolled in Thinkful's Web Development bootcamp I created this Full-stack Capstone project.  Easy budget is an interactive web application that was created to view and manage your monthly budget.  This app was created so that you can view all of your monthly expenses and figure out whether they align with your financial goals. -->
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Link to the [Live URL application](https://bloom-app.vercel.app)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Technology Used
+#### Front-end
+- React
+    - Router
+    - Context
+    - Libraries
+        - Sweet Alerts
+- HTML
+- CSS
+- Vercel(Zeit)
 
-### `npm test`
+#### Back-end
+- Node.js
+- Express
+    - Knex
+    - Mocha, Chai & Supertest
+- PostgreSQL
+    - Elephant SQL
+- Heroku
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## User Stories 
 
-### `npm run build`
+<!-- <b>Landing Page</b>
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- As a new user
+    - I want to understand what this app does and if it will be useful for me.
+    - I would like to create a budget
+- As a returning user
+    - I would like to learn more about finances
+    - I would like to update my budget
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+<b>Review your budget Screen</b>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- As a new user
+    - I would like to see what a typical budget looks like
+- As a returning user
+    - I would like to review my current budget
 
-### `npm run eject`
+<b>Create an expense screen</b>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- As a returning user
+    - I would like to add a new expense to my budget
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<b>Not Found screen</b>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- As a new user AND As a returning user
+    - I would like to know that the page I navigated to does not exist  -->
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## React Component Structure
+<!-- - index.js (stateless)
+    - src/App.js(statefull)
+        - NavBar.js
+            - SignupButton.js
+        - Homepage.js
+            - GoToBudgetButton.js
+                - BudgetPage.js
+                - UpdateBudgetButton.js
+                    - CreateExpensePage.js
+                        - GoToBudgetButton.js
+            - Overview.js
+            - HowTo.js
+            - ProgressSection.js
+        - Footer.js -->
 
-## Learn More
+# 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Landing Page
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- <img src="screens/landing.png" alt="Image of Landing page" width="420px">
+<img src="screens/landing2.png" alt="Image of Landing page" width="420px">
+<img src="screens/landing3.png" alt="Image of Landing page" width="420px">
+<img src="screens/landing4.png" alt="Image of Landing page" width="420px"> -->
 
-### Code Splitting
+<!-- #### Signup Button
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- From the landing page click the signup button to view a signup alert.  
+- From there you can leave your email address to be notified of future app updates.  
+- This alert was created with <b>Sweet Alerts</b>
 
-### Analyzing the Bundle Size
+<img src="screens/signup.png" alt="Image of signup alert" width="420px">
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+#### Review your budget screen
 
-### Making a Progressive Web App
+- From the landing page click the <b>Review your Budget</b> button to navigate to the `/budget` page.  
+- On this page a list of expenses can be viewed in a <b>HTML table</b> that renders a database of expenses which were created with <b>PostgreSQL</b>.  
+- The database is pre-populated with default expenses.  
+- Click the <b>Delete</b> button to remove expenses.
+- Expenses can be added with the <b>Update Budget</b> button and then the app will navigate to the add and expense page.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+<img src="screens/expenses1.png" alt="Image of Expense Screen" width="420px">
+<img src="screens/expenses2.png" alt="Image of Expense Screen" width="420px">
 
-### Advanced Configuration
+#### Create an expense screen
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+- Once the <b>Update Budget</b> button is clicked the app navigates to the `/create` page
+- Enter information for the new expense in the form and click the <b>Add Expense</b> button
+- The <b>Review your budget</b> button can be clicked to navigate back to the `/budget` page
 
-### Deployment
+<img src="screens/addexpense.png" alt="Image of add xpense page" width="420px">
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+- Once the <b>Add Expense</b> button has been click an alert will appear to let you know that the expense has been created. 
+- This alert was created with <b>Sweet Alerts</b>
 
-### `npm run build` fails to minify
+<img src="screens/expenseFeedback.png" alt="Image of Expense feedback alert" width="420px">
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+#### Not Found screen
+
+- If the user tries to navigate to a page that does not have a route `/*` the Not Found page will be displayed
+- This feature was created with <b>React Router</b>
+
+<img src="screens/notfound.png" alt="Image of 404 page" width="420px"> -->
+
+# 
+
+## Bloom API
+Link to the [API Repo](hhttps://github.com/ChandaHubbard/bloom-api) with API Documentation
