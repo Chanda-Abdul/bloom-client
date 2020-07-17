@@ -1,0 +1,10 @@
+div, section, input, label, fieldset, form {
+    padding: .25rem;
+    margin: .25rem;
+}
+
+form {
+    width: 50%;
+}
+
+

@@ -1,4 +1,15 @@
 body {
+  /* background-image: url("https://images.unsplash.com/photo-1555803741-1ac759ac2f53?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+   */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: white;
+
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +21,21 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  padding-top: 10rem;
+}
+
+section {
+  padding: 10% 0 10% 0;
+  height: auto;
+  background-color: white;
+}
+
+
+
+nav, footer {
+  padding: .5rem;
+}
+
+footer {
+  font-size: 1.5rem;
 }

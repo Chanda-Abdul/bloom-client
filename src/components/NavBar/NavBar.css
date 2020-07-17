@@ -1,0 +1,43 @@
+nav {
+    background-color: #035CD4;
+    position: fixed;
+    color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    /* font-family: 'Amatic SC', cursive; */
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+  
+  .right {
+    position: relative;
+    float: right;
+    padding: .25rem;
+    margin-right: .75rem;
+  }
+  
+  .left {
+    position: relative;
+    float: left;
+    padding: .25rem;
+    margin: .25rem;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .btn {
+    cursor: pointer;
+  }
+  
+  .btn a:active {
+  top: .1rem;
+  }
+  
+  
+  
