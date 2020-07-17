@@ -7,7 +7,7 @@ Chanda Hubbard
 
 <!-- While enrolled in Thinkful's Web Development bootcamp I created this Full-stack Capstone project.  Easy budget is an interactive web application that was created to view and manage your monthly budget.  This app was created so that you can view all of your monthly expenses and figure out whether they align with your financial goals. -->
 
-Link to the [Live URL application](https://bloom-app.vercel.app)
+Link to the [Live URL application](https://bloom-app.chandacodes.vercel.app)
 
 ## Technology Used
 #### Front-end
@@ -25,6 +25,7 @@ Link to the [Live URL application](https://bloom-app.vercel.app)
 - Express
     - Knex
     - Mocha, Chai & Supertest
+    - Morgan, CORS, Helmet
 - PostgreSQL
     - Elephant SQL
 - Heroku
@@ -58,20 +59,28 @@ Link to the [Live URL application](https://bloom-app.vercel.app)
     - I would like to know that the page I navigated to does not exist  -->
 
 ## React Component Structure
-<!-- - index.js (stateless)
+- index.js (stateless)
     - src/App.js(statefull)
         - NavBar.js
             - SignupButton.js
-        - Homepage.js
-            - GoToBudgetButton.js
+        - LandingPage.js
+        - ViewGardenButton.js
+            - ViewGardenPage.js
+                - PlantCard.js
+                    - DeleteButton.js
+                    - InfoButton.js
+                        - PlantCarePage.js
+                - AddPlantPage.js
+        - NotFoundPage.js
+            
+            <!-- - GoToBudgetButton.js
+            - SidePanel.js
                 - BudgetPage.js
                 - UpdateBudgetButton.js
                     - CreateExpensePage.js
                         - GoToBudgetButton.js
-            - Overview.js
-            - HowTo.js
-            - ProgressSection.js
-        - Footer.js -->
+            - Overview.js -->
+        - Footer.js
 
 # 
 
