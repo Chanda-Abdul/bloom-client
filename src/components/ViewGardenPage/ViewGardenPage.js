@@ -25,7 +25,10 @@ export default class ViewGardenPage extends React.Component {
           {/* conditionally render later */}
           <section className="card-container">
             <div className="ui container comments">
-              <PlantCard>
+                <PlantCard/>
+                <PlantCard/>
+                <PlantCard/>
+              {/* <PlantCard>
                 <div>
                   <h4>Plant Name</h4>
                   <h6>description of the plant</h6>
@@ -64,7 +67,7 @@ export default class ViewGardenPage extends React.Component {
                     avatar={faker.image.nature()}
                   />
                 </div>
-              </PlantCard>
+              </PlantCard> */}
             </div>
           </section>
 

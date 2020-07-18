@@ -1,6 +1,6 @@
 import React from "react"
 // import SignUpButton from '../SignUpButton/SignUpButton'
-import MenuWrap from '../SidePanel/SidePanel'
+import SidePanel from '../SidePanel/SidePanel'
 
 import { Link } from 'react-router-dom'
 import './NavBar.css'
@@ -15,7 +15,7 @@ export default class NavBar extends React.Component {
             </div>
             <div className="topnav right btn">
               {/* <SignUpButton /> */}
-             <MenuWrap />
+             <SidePanel />
             </div>
           </nav>
         )
