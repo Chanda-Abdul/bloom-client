@@ -133,4 +133,5 @@ Link to the [Live URL application](https://bloom-app.chandacodes.vercel.app)
 # 
 
 ## Bloom API
-Link to the [API Repo](https://github.com/ChandaHubbard/bloom-api) with API Documentation
+
+Link to the [API Repo](https://github.com/ChandaHubbard/bloom-api)  with API Documentation
