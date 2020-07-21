@@ -1,10 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import axios from 'axios'
 import { Link } from "react-router-dom";
 import faker from "faker";
 import PlantCard from "../PlantCard/PlantCard";
 import PlantDetail from "../PlantDetail";
 import ViewGardenButton from "../ViewGardenButton/ViewGardenButton";
+import PlantService from '../../actions/PlantService'
 
 export default class ViewGardenPage extends React.Component {
   render() {
@@ -21,6 +23,9 @@ export default class ViewGardenPage extends React.Component {
             nunc aliquet bibendum enim. In vitae turpis massa sed. Dolor sed
             viverra ipsum nunc aliquet bibendum enim. Viverra accumsan in nisl
             nisi.
+          </p>
+          <p>
+            <PlantService/>
           </p>
           {/* conditionally render later */}
           <section className="card-container">
