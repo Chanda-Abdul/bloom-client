@@ -83,7 +83,7 @@ export default class AddPlantPage extends React.Component {
       <div>
         <section>
           <h1>Add a plant to your garden</h1>
-          <h4>Type information below to add a plant to your garden</h4>
+          <h4>Enter information below to add a plant to your garden</h4>
           <div className="">
             <form
               className="add-plant-form"
@@ -161,7 +161,7 @@ export default class AddPlantPage extends React.Component {
                     value={this.state.water_requirements}
                     defaultValue={this.state.water_requirements}
                     name="plantWater"
-                    // className="input__control"
+                    className="input__control"
                     onChange={this.onInputChange}
                     required
                   >
@@ -173,14 +173,19 @@ export default class AddPlantPage extends React.Component {
                   </select>
                   <br />
                   <label htmlFor="">Light Conditions:</label>
-                  <input
-                    placeholder="****"
+                  <select
+                    value={this.state.light_conditions}
+                    defaultValue={this.state.light_conditions}
                     name="plantLight"
-                    type="text"
-                    value=""
                     className="input__control"
-                    //   onChange={this.onInputChange}
-                  />
+                    onChange={this.onInputChange}
+                    required
+                  >
+                    <option value="1">Low to Partial</option>
+                    <option value="2">Medium Indirect Light</option>
+                    <option value="3">Bright Light</option>
+                    <option value="4">Full Sun</option>
+                  </select>
                   <br />
                   <label htmlFor="">Add an Image:</label>
                   <input
@@ -189,7 +194,7 @@ export default class AddPlantPage extends React.Component {
                     type="text"
                     value=""
                     className="input__control"
-                    //   onChange={this.onInputChange}
+                    onChange={this.onInputChange}
                   />
                   <br />
                 </div>
@@ -200,7 +205,7 @@ export default class AddPlantPage extends React.Component {
                 onClick={this.addPlantAlert}
               >
                 Add Plant!
-              </button>{" "}
+              </button>
               <ViewGardenButton />
             </form>
           </div>
