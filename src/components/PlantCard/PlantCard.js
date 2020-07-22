@@ -8,7 +8,7 @@ class PlantCard extends React.Component {
     const { garden } = this.props;
     return (
       <div>
-        <div class="card">
+        <div className="card">
           <div>
             <div className="plant-header">
               <h2>{garden.plant_name}</h2>

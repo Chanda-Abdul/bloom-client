@@ -1,5 +1,5 @@
 import React from "react";
-import PlantService from "../src/actions/PlantService";
+import PlantService from "../src/service/PlantService";
 import PlantContext from "./contexts/PlantContext";
 import Routes from "./routes/Routes";
 import NavBar from "./components/NavBar/NavBar";
@@ -12,6 +12,10 @@ export default class App extends React.Component {
     this.plantService = new PlantService();
   }
 
+  state = {
+    garden: []
+    }
+
   static contextType = PlantContext;
 
   componentDidMount() {
@@ -20,13 +24,23 @@ export default class App extends React.Component {
     });
   }
 
+  setPlant = (garden) => {
+    this.setState({ garden: garden });
+  };
+
   render() {
+    const value = {
+      garden: this.state.garden,
+      setPlant: this.setPlant,
+    };
     return (
-      <div>
-        <NavBar />
-        <Routes />
-        <Footer />
-      </div>
+      <PlantContext.Provider value={value}>
+        <div>
+          <NavBar />
+          <Routes />
+          <Footer />
+        </div>
+      </PlantContext.Provider>
     );
   }
 }

@@ -5,11 +5,11 @@ import PlantContext from "../../contexts/PlantContext";
 
 export default class ViewGardenPage extends React.Component {
   static contextType = PlantContext;
-  
+
   render() {
     const { garden } = this.context;
     return (
-      <div class="top">
+      <div className="top">
         <section>
           <h1>Hello</h1>
           <p>Welcome to your garden</p>
