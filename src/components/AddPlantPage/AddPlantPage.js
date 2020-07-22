@@ -141,7 +141,6 @@ export default class AddPlantPage extends React.Component {
                   <br />
                   <label htmlFor="">Maintence Level:</label>
                   <select
-                    value={this.state.maintence_level}
                     defaultValue={this.state.maintence_level}
                     name="plantMaintence"
                     // className="input__control"
@@ -158,7 +157,6 @@ export default class AddPlantPage extends React.Component {
                   <br />
                   <label htmlFor="">Water Requirements:</label>
                   <select
-                    value={this.state.water_requirements}
                     defaultValue={this.state.water_requirements}
                     name="plantWater"
                     className="input__control"
@@ -174,7 +172,6 @@ export default class AddPlantPage extends React.Component {
                   <br />
                   <label htmlFor="">Light Conditions:</label>
                   <select
-                    value={this.state.light_conditions}
                     defaultValue={this.state.light_conditions}
                     name="plantLight"
                     className="input__control"
@@ -192,7 +189,7 @@ export default class AddPlantPage extends React.Component {
                     placeholder="http://www.plant.image.com/coolplant.jpg"
                     name="plantImage"
                     type="text"
-                    value=""
+                    value={this.state.image_url}
                     className="input__control"
                     onChange={this.onInputChange}
                   />
