@@ -1,39 +1,66 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import InfoButton from "../InfoButton/InfoButton";
 import DeleteButton from "../DeleteButton/DeleteButton";
+import "./PlantCard.css";
 
-const PlantCard = (props) => {
-  console.log(props.children, "plant card - props.children");
-  return (
-    <div className="card-container">
-      <div className="card">
-        <img
-          src="https://picsum.photos/600/500/?random"
-          alt="Random"
-          class="card-img"
-        />
-        <div className="card-body">
-          <h3>Plant Name: {props.children}</h3>
-          <p>Details: {props.children}</p>
-          <p>Rating: {props.children}</p>
-          <p>Care Info: {props.children}</p>
-          <p></p>
-          <InfoButton />
+class PlantCard extends React.Component {
+  render() {
+    const { garden } = this.props;
+    return (
+      <div>
+        <div class="card">
+          <div>
+            <div className="plant-header">
+              <h2>{garden.plant_name}</h2>
+            </div>
+            <div className="plant-info">
+              <div className="plant-image">
+                <img src={garden.image_url} alt={garden.plant_name} />
+                <div className="plant-stats">
+                  <ul>
+                    <li>
+                      <b>Scientific Name: </b>
+                      <br />
+                      {garden.scientific_name}
+                    </li>
+                    <br />
+                    <li>
+                      <b>Maintenance Level: </b>
+                      <br />
+                      {garden.maintenance}
+                    </li>
+                    <br />
+                    <li>
+                      <b>Water: </b>
+                      <br />
+                      {garden.water}
+                    </li>
+                    <br />
+                    <li>
+                      <b>Light Conditions: </b>
+                      <br />
+                      {garden.light}
+                    </li>
+                    <br />
+                    <li>
+                      <b>Plant Type: </b>
+                      <br />
+                      {garden.plant_type}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="plant-details">
+              <p>{garden.details}</p>
+            </div>
+          </div>
           <DeleteButton />
+          <InfoButton />
         </div>
       </div>
-      {/* <div className="ui card">
-        <div className="content">{props.children}</div>
-        <div className="extra content">
-            <div className="ui two buttons">
-                <InfoButton/>
-                <DeleteButton/>
-            </div>
-        </div>
-    </div> */}
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default PlantCard;

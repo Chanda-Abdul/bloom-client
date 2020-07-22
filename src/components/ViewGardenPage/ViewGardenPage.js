@@ -1,15 +1,13 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import axios from 'axios'
 import { Link } from "react-router-dom";
-import faker from "faker";
 import PlantCard from "../PlantCard/PlantCard";
-import PlantDetail from "../PlantDetail";
-import ViewGardenButton from "../ViewGardenButton/ViewGardenButton";
-import PlantService from '../../actions/PlantService'
+import PlantContext from "../../contexts/PlantContext";
 
 export default class ViewGardenPage extends React.Component {
+  static contextType = PlantContext;
+  
   render() {
+    const { garden } = this.context;
     return (
       <div class="top">
         <section>
@@ -24,60 +22,18 @@ export default class ViewGardenPage extends React.Component {
             viverra ipsum nunc aliquet bibendum enim. Viverra accumsan in nisl
             nisi.
           </p>
-          <p>
-            <PlantService/>
-          </p>
+          <p></p>
           {/* conditionally render later */}
           <section className="card-container">
             <div className="ui container comments">
-                <PlantCard/>
-                <PlantCard/>
-                <PlantCard/>
-              {/* <PlantCard>
-                <div>
-                  <h4>Plant Name</h4>
-                  <h6>description of the plant</h6>
-                  <PlantDetail
-                    content={faker.lorem.sentence()}
-                    avatar={faker.image.nature()}
-                  />
-                </div>
-              </PlantCard>
-              <PlantCard>
-                <div>
-                  <h4>Plant Name</h4>
-                  <h6>description of the plant</h6>
-                  <PlantDetail
-                    content={faker.lorem.sentence()}
-                    avatar={faker.image.nature()}
-                  />
-                </div>
-              </PlantCard>
-              <PlantCard>
-                <div>
-                  <h4>Plant Name</h4>
-                  <h6>description of the plant</h6>
-                  <PlantDetail
-                    content={faker.lorem.sentence()}
-                    avatar={faker.image.nature()}
-                  />
-                </div>
-              </PlantCard>
-              <PlantCard>
-                <div>
-                  <h4>Plant Name</h4>
-                  <h6>description of the plant</h6>
-                  <PlantDetail
-                    content={faker.lorem.sentence()}
-                    avatar={faker.image.nature()}
-                  />
-                </div>
-              </PlantCard> */}
+              {garden.map((item) => (
+                <PlantCard garden={item} />
+              ))}
             </div>
           </section>
 
           <Link to="/add">
-            <button className="myButton ui basic button">Add A Plant</button>
+            <button className="myButton green">Add A Plant</button>
           </Link>
         </section>
       </div>
