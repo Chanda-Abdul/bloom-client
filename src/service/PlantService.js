@@ -13,7 +13,8 @@ export default class PlantService {
     return axios
       .post(
         config.API_BASE_URL + "/plants"
-        // { plant }
+        // ,
+        // { newPlant }
       )
       .then((res) => {
         console.log(res);
