@@ -9,12 +9,11 @@ export default class PlantService {
     });
   }
 
-  createNewPlant() {
+  createNewPlant(newPlant) {
     return axios
       .post(
-        config.API_BASE_URL + "/plants"
-        // ,
-        // { newPlant }
+        config.API_BASE_URL + "/plants",
+        { newPlant }
       )
       .then((res) => {
         console.log(res);
@@ -23,7 +22,7 @@ export default class PlantService {
   }
 
   removePlant() {
-      return axios.delete(config.API_BASE_URL + "/plants/" + `${this.state.id}`)
+      return axios.delete(config.API_BASE_URL + "/plants/" + this.state.id)
       .then(res => {
         console.log(res);
         console.log(res.data);

@@ -12,9 +12,9 @@ export default class App extends React.Component {
     this.plantService = new PlantService();
   }
 
-  state = {
-    garden: []
-    }
+  // state = {
+  //   garden: []
+  //   }
 
   static contextType = PlantContext;
 
@@ -25,22 +25,22 @@ export default class App extends React.Component {
   }
 
   setPlant = (garden) => {
-    this.setState({ garden: garden });
+    this.context({ garden: garden });
   };
 
   render() {
-    const value = {
-      garden: this.state.garden,
-      setPlant: this.setPlant,
-    };
+    // let value = {
+    //   garden: this.state.garden,
+    //   setPlant: this.setPlant,
+    // };
     return (
-      <PlantContext.Provider value={value}>
+      // <PlantContext.Provider value={value}>
         <div>
           <NavBar />
           <Routes />
           <Footer />
         </div>
-      </PlantContext.Provider>
+      // </PlantContext.Provider>
     );
   }
 }
