@@ -8,13 +8,12 @@ import ViewGardenButton from "../ViewGardenButton/ViewGardenButton";
 export default class AddPlantPage extends React.Component {
   static contextType = PlantContext;
 
-  //Is this neccesary?
   state = {
     plant_name: "",
-    scientic_name: "",
+    scientific_name: "",
     details: "",
     plant_type: "",
-    maintence_level: 1,
+    maintenance_level: 1,
     water_requirements: 1,
     light_conditions: 1,
     image_url: "",
@@ -26,7 +25,6 @@ export default class AddPlantPage extends React.Component {
   }
 
   onInputChange = (e) => {
-    e.preventDefault();
     this.setState({
       [e.target.name]: e.target.value,
     });
@@ -36,26 +34,24 @@ export default class AddPlantPage extends React.Component {
     event.preventDefault();
     const newPlant = {
       plant_name: this.state.plant_name,
-      scientic_name: this.state.scientic_name,
+      scientific_name: this.state.scientific_name,
       details: this.state.details,
       plant_type: this.state.plant_type,
-      maintence_level: this.state.maintence_level,
+      maintenance_level: this.state.maintenance_level,
       water_requirements: this.state.water_requirements,
       light_conditions: this.state.light_conditions,
       image_url: this.state.image_url,
     };
+   
     this.plantService
       .createNewPlant(newPlant)
       .then((plant) => {
+        console.log(newPlant, "new Plant")
         this.context.setPlant(plant);
       })
       .catch((err) => {
         console.log(err, "error on createPlant");
       });
-  };
-
-  setPlant = (plant) => {
-    this.setState({ plant: plant });
   };
 
   addPlantAlert() {
@@ -66,19 +62,8 @@ export default class AddPlantPage extends React.Component {
     });
   }
 
-  // render() {
-  //   const value = {
-  //     expenses: this.state.expenses,
-  //     setExpenses: this.setExpenses,
-  //   };
 
   render() {
-    // const { garden } = this.context;
-    const { garden } = {
-      plant: this.state.plant,
-      setPlant: this.setPlant,
-    };
-    console.log(garden, "addplantpage");
     return (
       <div>
         <section>
@@ -93,13 +78,13 @@ export default class AddPlantPage extends React.Component {
                 <legend>Add Plant: </legend>
                 <p>
                   Just enter the plant name, scientific name, and details,
-                  maintence and image of the new plant to add it to your garden
+                  maintenance and image of the new plant to add it to your garden
                 </p>
                 <div className="input-form-group">
                   <label htmlFor="">Plant Name:</label>
                   <input
                     placeholder="insert plant name here"
-                    name="plantName"
+                    name="plant_name"
                     type="text"
                     value={this.state.plant_name}
                     className="input__control"
@@ -110,9 +95,9 @@ export default class AddPlantPage extends React.Component {
                   <label htmlFor="">Scientific Name:</label>
                   <input
                     placeholder="insert scientific name here"
-                    name="scientificName"
+                    name="scientific_name"
                     type="text"
-                    value={this.state.scientic_name}
+                    value={this.state.scientific_name}
                     className="input__control"
                     onChange={this.onInputChange}
                     required
@@ -121,7 +106,7 @@ export default class AddPlantPage extends React.Component {
                   <label htmlFor="">Details:</label>
                   <input
                     placeholder="insert plant details here"
-                    name="plantDetails"
+                    name="details"
                     type="text"
                     value={this.state.details}
                     className="input__control"
@@ -132,18 +117,18 @@ export default class AddPlantPage extends React.Component {
                   <label htmlFor="">Plant Type:</label>
                   <input
                     placeholder="Plant Type(optional)"
-                    name="plantType"
+                    name="plant_type"
                     type="text"
                     value={this.state.plant_type}
                     className="input__control"
                     onChange={this.onInputChange}
                   />
                   <br />
-                  <label htmlFor="">Maintence Level:</label>
+                  <label htmlFor="">maintenance Level:</label>
                   <select
-                    defaultValue={this.state.maintence_level}
-                    name="plantMaintence"
-                    // className="input__control"
+                    defaultValue={this.state.maintenance_level}
+                    name="maintenance_level"
+                    className="input__control"
                     onChange={this.onInputChange}
                     required
                   >
@@ -158,7 +143,7 @@ export default class AddPlantPage extends React.Component {
                   <label htmlFor="">Water Requirements:</label>
                   <select
                     defaultValue={this.state.water_requirements}
-                    name="plantWater"
+                    name="water_requirements"
                     className="input__control"
                     onChange={this.onInputChange}
                     required
@@ -173,7 +158,7 @@ export default class AddPlantPage extends React.Component {
                   <label htmlFor="">Light Conditions:</label>
                   <select
                     defaultValue={this.state.light_conditions}
-                    name="plantLight"
+                    name="light_conditions"
                     className="input__control"
                     onChange={this.onInputChange}
                     required
@@ -186,10 +171,11 @@ export default class AddPlantPage extends React.Component {
                   <br />
                   <label htmlFor="">Add an Image:</label>
                   <input
+                  //add default image
                     placeholder="http://www.plant.image.com/coolplant.jpg"
-                    name="plantImage"
-                    type="text"
                     value={this.state.image_url}
+                    name="image_url"
+                    type="text"
                     className="input__control"
                     onChange={this.onInputChange}
                   />

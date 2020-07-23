@@ -12,35 +12,41 @@ export default class App extends React.Component {
     this.plantService = new PlantService();
   }
 
-  // state = {
-  //   garden: []
-  //   }
-
-  static contextType = PlantContext;
+  state = {
+    garden: []
+    }
 
   componentDidMount() {
     this.plantService.getAllPlants().then((garden) => {
-      this.context.garden = garden;
+      this.setState({ garden });
     });
   }
 
   setPlant = (garden) => {
-    this.context({ garden: garden });
+    this.setState({ garden: [...this.state.garden, garden] },
+      () => console.log(this.state.garden)
+      );
   };
 
+  removePlant = (id) => {
+    this.setState({ garden: this.state.garden.filter(plant => plant.id !== id)})
+  }
+
   render() {
-    // let value = {
-    //   garden: this.state.garden,
-    //   setPlant: this.setPlant,
-    // };
+    let value = {
+      garden: this.state.garden,
+      setPlant: this.setPlant,
+      removePlant: this.removePlant,
+    };
+    
     return (
-      // <PlantContext.Provider value={value}>
+      <PlantContext.Provider value={value}>
         <div>
           <NavBar />
           <Routes />
           <Footer />
         </div>
-      // </PlantContext.Provider>
+      </PlantContext.Provider>
     );
   }
 }

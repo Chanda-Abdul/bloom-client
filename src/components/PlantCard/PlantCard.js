@@ -1,9 +1,12 @@
 import React from "react";
+import PlantContext from '../../contexts/PlantContext'
 import InfoButton from "../InfoButton/InfoButton";
 import DeleteButton from "../DeleteButton/DeleteButton";
 import "./PlantCard.css";
 
 class PlantCard extends React.Component {
+  static contextType = PlantContext;
+
   render() {
     const { garden } = this.props;
     return (
@@ -55,7 +58,7 @@ class PlantCard extends React.Component {
               <p>{garden.details}</p>
             </div>
           </div>
-          <DeleteButton />
+          <DeleteButton id={garden.id}/>
           <InfoButton />
         </div>
       </div>

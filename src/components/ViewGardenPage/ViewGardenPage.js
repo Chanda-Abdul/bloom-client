@@ -25,9 +25,9 @@ export default class ViewGardenPage extends React.Component {
           <p></p>
           {/* conditionally render later */}
           <section className="card-container">
-            <div className="ui container comments">
+            <div className="ui container details">
               {garden.map((item) => (
-                <PlantCard garden={item} />
+                <PlantCard garden={item}  key={item.id}/>
               ))}
             </div>
           </section>

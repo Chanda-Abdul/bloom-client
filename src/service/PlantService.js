@@ -3,7 +3,8 @@ import axios from "axios";
 
 export default class PlantService {
   getAllPlants() {
-    return axios.get(config.API_BASE_URL + "/plants").then((res) => {
+    return axios.get(config.API_BASE_URL + "/plants")
+    .then((res) => {
       const garden = res.data.plants;
       return garden;
     });
@@ -13,16 +14,16 @@ export default class PlantService {
     return axios
       .post(
         config.API_BASE_URL + "/plants",
-        { newPlant }
+         newPlant 
       )
       .then((res) => {
-        console.log(res);
-        console.log(res.data);
+        return res.data.plant;
       });
   }
 
-  removePlant() {
-      return axios.delete(config.API_BASE_URL + "/plants/" + this.state.id)
+  removePlant(id) {
+      return axios
+      .delete(config.API_BASE_URL + "/plants/" + id)
       .then(res => {
         console.log(res);
         console.log(res.data);
