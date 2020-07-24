@@ -11,30 +11,31 @@ export default class ViewGardenPage extends React.Component {
     return (
       <div className="top">
         <section>
-          <h1>Hello</h1>
-          <p>Welcome to your garden</p>
+          <h1>Hello...</h1>
+          <p>Welcome to your garden!</p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus
-            id interdum velit laoreet id donec ultrices tincidunt arcu. Amet
-            risus nullam eget felis eget nunc lobortis mattis. Viverra ipsum
-            nunc aliquet bibendum enim. In vitae turpis massa sed. Dolor sed
-            viverra ipsum nunc aliquet bibendum enim. Viverra accumsan in nisl
-            nisi.
+            All of the plants that are currently in your garden are listed
+            below.
           </p>
-          <p></p>
-          {/* conditionally render later */}
-          <section className="card-container">
-            <div className="ui container details">
-              {garden.map((item) => (
-                <PlantCard garden={item}  key={item.id}/>
-              ))}
-            </div>
-          </section>
+          <p>
+            Click the 'delete' button on any plant to remove it from your garden
+          </p>
+          <p>
+            Click the 'More Info' button to view more indoor gardening tips.
+          </p>
 
+          <p>Add another plant to your garden here</p>
           <Link to="/add">
             <button className="myButton green">Add A Plant</button>
           </Link>
+
+          <section className="card-container">
+            <div className="ui container details">
+              {garden.map((item) => (
+                <PlantCard garden={item} key={item.id} />
+              ))}
+            </div>
+          </section>
         </section>
       </div>
     );

@@ -1,20 +1,28 @@
 import React from "react";
-import ViewGardenButton from '../ViewGardenButton/ViewGardenButton'
+import ViewGardenButton from "../ViewGardenButton/ViewGardenButton";
 
 export default class LandingPage extends React.Component {
   render() {
     return (
       <section>
         <h1>Welcome to Bloom</h1>
+        <p>Bloom is a great way to keep track of your indoor garden. </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          The Bloom app is a great way to create a visual representation of all
+          of the plants you own. Bloom is the best way to keep your jungle
+          organized.
         </p>
+        <p>
+          By providing educational reminders about how and when to care for each
+          plant in you can make sure that your urban jungle is always thriving.{" "}
+        </p>
+        <p>
+          View your garden to take a look at all of the plants you currently
+          own. In your garden you can view care information and details to help
+          you tend to each plant.{" "}
+        </p>
+        <p>As you aquire new plants, you can add them to your garden.</p>
+
         <ViewGardenButton />
       </section>
     );
