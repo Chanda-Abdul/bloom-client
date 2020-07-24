@@ -5,7 +5,7 @@ import Swal from 'sweetalert2'
 export default class SignUpButton extends React.Component {
     signup() {
         Swal.fire({
-            title: 'Bloom App Signup',
+            title: 'Join our plant family!',
             text: 'Thank you for your interest. The app is currently in the testing phase.  Sign up below and we will let you know once the Bloom App is available to the public',
             icon: 'info',
             input: 'email',
