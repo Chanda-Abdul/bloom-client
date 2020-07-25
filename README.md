@@ -97,8 +97,8 @@ Link to the [Live URL application](https://bloom-app.chandacodes.vercel.app)
 - Click the <b>Delete</b> button to remove a plant.
     - Once the  <b>Delete</b> button has been clicked you will see an alert to confirm that you would like to delete the plant
     - This alert was created with <b>Sweet Alerts</b>
-    <img src="./src/screens/deletecofirmation.png" alt="Image of delete alert" width="420px">
-    <img src="./src/screens/deletecofirmation2.png" alt="Image of delete alert" width="420px">
+    <img src="./src/screens/deleteconfirmation.png" alt="Image of delete alert" width="420px">
+    <img src="./src/screens/deleteconfirmation2.png" alt="Image of delete alert" width="420px">
 - Click the <b>More Info</b> button to navigate to the `/information` page.
 - Plants can be added with the <b>Add A Plant</b> button and then the app will navigate to the add a plant page.
 
