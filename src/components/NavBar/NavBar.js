@@ -1,7 +1,5 @@
 import React from "react"
-// import SignUpButton from '../SignUpButton/SignUpButton'
-import SidePanel from '../SidePanel/SidePanel'
-
+import SignUpButton from '../SignUpButton/SignUpButton'
 import { Link } from 'react-router-dom'
 import './NavBar.css'
 
@@ -14,8 +12,7 @@ export default class NavBar extends React.Component {
               <Link to="/">Bloom</Link>
             </div>
             <div className="topnav right btn">
-              {/* <SignUpButton /> */}
-             <SidePanel />
+              <SignUpButton />
             </div>
           </nav>
         )

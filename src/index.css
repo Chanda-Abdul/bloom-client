@@ -1,95 +1,182 @@
 body {
-  /* background-image: url("https://images.unsplash.com/photo-1555803741-1ac759ac2f53?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
-   */
+  background-image: url("https://images.unsplash.com/photo-1528295674080-a70f6cbf4ff0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  
+  text-align: center;
   /* Set a background color that will be displayed
      while the background image is loading */
-  background-color: white;
-
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-opacity: .7; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-  padding-top: 10rem;
+html {
+  font-size: 12px;
 }
 
-section {
-  padding: 10% 0 10% 0;
-  height: auto;
-  background-color: white;
-}
-
-
-
-nav, footer {
-  padding: .5rem;
-}
-
-footer {
-  font-size: 1.5rem;
-}
-
-/* .App {
-  font-family: sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cabin Sketch", cursive;
+  padding: 0.5rem;
+  font-weight: 700;
   text-align: center;
-  font-size: 0.75rem; 
-}*/
-
-/* .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50vw;
-  margin: auto;
 }
 
-.card {
-  display: inline-block;
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cabin Sketch", cursive;
+  padding: 0.5rem;
+  font-weight: 700;
+  text-align: center;
+  font-size: 2rem;
+}
+
+p {
   margin: 0.5rem;
   padding: 0.5rem;
-  height: auto;
-  width: 30rem;
-  position: relative;
-  border: 1px solid #d3d3d3;
-  border-radius: 0.25rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+li {
+  font-family: "Open Sans", sans-serif;
+}
+
+form {
+  text-align: center;
+}
+
+.heading {
+  display: inline-block;
+  width: 75rem;
+  background-color: white;
+  text-align: center;
+}
+
+.landing-heading,
+.garden-heading, .info-heading, .create-heading {
+  background-color: white;
+  margin-top: 15em;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 5em;
+  border-radius: 1rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-.plant-image img {
-  width: 15rem;
+.landing-heading {
+  margin-bottom: 10em;
+  width: 50rem;
 }
 
-.plant-image {
-  float: left;
-  margin: 0.1rem;
-  padding: .1rem;
+.info-heading {
+  width: 50rem;
+  margin-bottom: 10em;
 }
 
-.plant-stats {
-  float: right;
-  margin: 0.1rem;
-  padding: .1rem;
-  
+.create-heading {
+  width: 50rem;
+  margin-bottom: 10em;
 }
 
-.plant-stats ul {
-  list-style: none;
-  width: 10rem;
-  line-height: 1.5rem;
+nav {
+  font-family: "Cabin Sketch", bold, cursive;
 }
 
-.plant-info {
+#swal2-content {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* buttons */
+.myButton {
+  box-shadow: 0px 10px 14px -7px #032342;
+  background: linear-gradient(to bottom, #963e6e 5%, #d66da7 100%);
+  background-color: #963e6e;
+  border-radius: 8px;
   display: inline-block;
-} */
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a;
+  margin: 0.5rem;
+}
+.myButton:hover {
+  background: linear-gradient(to bottom, #d66da7 5%, #963e6e 100%);
+  background-color: #d66da7;
+}
+.myButton:active {
+  position: relative;
+  top: 0.1rem;
+}
+
+.myButton-red {
+  box-shadow: 0px 10px 14px -7px #032342;
+  background: linear-gradient(to bottom, #c74d51 5%, #701e1f 100%);
+  background-color: #c74d51;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a;
+  margin-right: 0rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.myButton-red:hover {
+  background: linear-gradient(to bottom, #701e1f 5%, #c74d51 100%);
+  background-color: #701e1f;
+}
+.myButton-red:active {
+  position: relative;
+  top: 1px;
+}
+
+.myButton-green {
+  box-shadow: 0px 10px 14px -7px #032342;
+  background: linear-gradient(to bottom, #8ec24e 5%, #537828 100%);
+  background-color: #8ec24e;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a;
+  margin-left: 0rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.myButton-green:hover {
+  background: linear-gradient(to bottom, #537828 5%, #8ec24e 100%);
+  background-color: #537828;
+}
+
+.myButton-green:active {
+  position: relative;
+  top: 1px;
+}

@@ -33,7 +33,7 @@ export default class DeleteButton extends React.Component {
   render() {
     return (
       <div className="button-update">
-        <button className="myButton red" onClick={() => this.delete(this.props.id)}>
+        <button className="myButton-red" onClick={() => this.delete(this.props.id)}>
           Delete
         </button>
       </div>

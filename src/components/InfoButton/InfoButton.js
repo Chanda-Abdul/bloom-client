@@ -6,7 +6,7 @@ export default class ViewGardenButton extends React.Component {
     return (
       <div className="button-update">
         <Link to="/information">
-          <button className="myButton green">More info</button>
+          <button className="myButton-green">More info</button>
         </Link>
       </div>
     );

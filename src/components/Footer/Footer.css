@@ -1,13 +1,14 @@
 footer {
     position: fixed;
-    background-color: #B92273;
+    background-color: #863862;
     color:white;
-    /* font-family: "Amatic SC", cursive; */
-    /* font-weight: 700; */
     text-align: center;
     padding: 1% 0;
     bottom: 0;
     left: 0;
     width: 100%;
+    font-family: "Cabin Sketch", bold, cursive;
+    font-size: 1rem;
+    font-weight: 400;
   }
   

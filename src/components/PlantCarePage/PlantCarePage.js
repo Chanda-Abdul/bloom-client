@@ -1,23 +1,32 @@
 import React from "react";
 import ViewGardenButton from "../ViewGardenButton/ViewGardenButton";
+import plant1 from "../../images/plant1.png";
+import plant3 from "../../images/plant3.png";
+import plant5 from "../../images/plant5.png";
+import plant8 from "../../images/plant8.png";
+import plant9 from "../../images/plant9.png";
+import gardening from "../../images/gardening.png";
+
 
 export default class PlantCarePage extends React.Component {
   render() {
     return (
-      <div>
-        <section>
+      <div >
+        <section className='info-heading'>
+          <div>
           <h1>How to propogate your green thumb</h1>
           <h2>Tips and tricks to help you care for your indoor jungle</h2>
           <p>
-            We get it. A houseplant is a living, “breathing” thing that requires
+            A houseplant is a living, “breathing” thing that requires
             some attention and care in order to thrive. Usually, when you buy a
             plant, there’s no one to ask for advice; little information about
             its specific requirements for water, light, and maintenance. We want
             to help everyone find their green thumb. With the right tools and a
             little help along the way, anyone can have a thriving indoor jungle.
           </p>
-        </section>
-        <section>
+          <img src={plant1} alt={plant1} width="125rem"/>
+        </div>
+        <div>
           <h3>Tip 1</h3>
           <h4>Get to know your plant.</h4>
           <p>
@@ -28,8 +37,9 @@ export default class PlantCarePage extends React.Component {
             instructions in your garden to view specifics about how to take care
             of each plant.
           </p>
-        </section>
-        <section>
+          <img src={plant3} alt={plant3} width="125rem"/>
+        </div>
+        <div>
           <h3>Tip 2</h3>
           <h4>Don't overwater your plant</h4>
           <p>
@@ -40,8 +50,9 @@ export default class PlantCarePage extends React.Component {
             finger to test the soil). Plants do not like to sit in soggy soil,
             so make sure you are removing the excess water after watering.
           </p>
-        </section>
-        <section>
+          <img src={plant5} alt={plant5} width="125rem"/>
+        </div>
+        <div>
           <h3>Tip 3</h3>
           <h4>Choose the right spot.</h4>
           <p>
@@ -49,8 +60,9 @@ export default class PlantCarePage extends React.Component {
             right plant for the light you have. Some, can adapt to and even
             prefer low light, while others prefer darker areas.
           </p>
-        </section>
-        <section>
+          <img src={plant8} alt={plant8} width="125rem"/>
+        </div>
+        <div>
           <h3>Tip 4</h3>
           <h4>Be Patient.</h4>
           <p>
@@ -60,17 +72,24 @@ export default class PlantCarePage extends React.Component {
             its new home. Give it time, and you should start to see positive
             results.
           </p>
-        </section>
-        <section>
+          <img src={plant9} alt={plant9} width="125rem"/>
+        </div>
+        <div>
           <h3>Tip 5</h3>
           <h4>Ask for help.</h4>
           <p>
             The online plant community is alive and thriving. Do your research
             and reach out to others when you need a little advice.
           </p>
-        </section>
-        <section>
+        </div>
+        <div>
           <ViewGardenButton />
+          <br/>
+          <br/>
+          <img src={gardening} alt={gardening} width="250rem"/>
+          <br/>
+          <br/>
+        </div>
         </section>
       </div>
     );

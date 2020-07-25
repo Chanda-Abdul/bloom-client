@@ -1,28 +1,27 @@
 nav {
-    background-color: #035CD4;
+    background-color: #022D57;
+    font-family: 'Cabin Sketch', cursive;
     position: fixed;
     color: white;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
-    /* font-family: 'Amatic SC', cursive; */
     font-weight: 700;
-    font-size: 2em;
-    margin-bottom: 30px;
+    font-size: 3em;
+    padding: 0.5rem;
   }
+
   
   .right {
     position: relative;
     float: right;
-    padding: .25rem;
-    margin-right: .75rem;
+   
   }
   
   .left {
     position: relative;
     float: left;
-    padding: .25rem;
     margin: .25rem;
   }
   

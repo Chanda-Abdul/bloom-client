@@ -10,10 +10,9 @@ class PlantCard extends React.Component {
   render() {
     const { garden } = this.props;
     return (
-      <div>
         <div className="card">
-          <div>
-            <div className="plant-header">
+          
+          <div className="plant-header">
               <h2>{garden.plant_name}</h2>
             </div>
             <div className="plant-info">
@@ -57,11 +56,14 @@ class PlantCard extends React.Component {
             <div className="plant-details">
               <p>{garden.details}</p>
             </div>
-          </div>
-          <DeleteButton id={garden.id}/>
-          <InfoButton />
+            <div className="gardenbutton">
+            <DeleteButton id={garden.id}/><InfoButton />
+            <div className="plant-footer"></div>
+            </div>
+          
+          
         </div>
-      </div>
+      
     );
   }
 }

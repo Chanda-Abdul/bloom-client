@@ -4,6 +4,8 @@ import Swal from "sweetalert2";
 import PlantContext from "../../contexts/PlantContext";
 import PlantService from "../../service/PlantService";
 import ViewGardenButton from "../ViewGardenButton/ViewGardenButton";
+import plant9 from "../../images/plant9.png";
+import shelf from "../../images/shelf.png";
 
 export default class AddPlantPage extends React.Component {
   static contextType = PlantContext;
@@ -16,7 +18,7 @@ export default class AddPlantPage extends React.Component {
     maintenance_level: 1,
     water_requirements: 1,
     light_conditions: 1,
-    image_url: "",
+    image_url: "https://images.assetsdelivery.com/compings_v2/morphart/morphart1910/morphart191008681.jpg",
   };
 
   constructor(props) {
@@ -42,23 +44,24 @@ export default class AddPlantPage extends React.Component {
       light_conditions: this.state.light_conditions,
       image_url: this.state.image_url,
     };
-   
+   console.log(this.state, "this.state")
     this.plantService
-      .createNewPlant(newPlant)
+      .createNewPlant(this.state)
       .then((plant) => {
-        console.log(newPlant, "new Plant")
+        this.addPlantAlert("success", "Plant has been added to your garden!", "Aww yiss!")
         this.context.setPlant(plant);
       })
       .catch((err) => {
-        console.log(err, "error on createPlant");
+        this.addPlantAlert("error", "Plant couldn't be added!", "cancel")
       });
+    
   };
 
-  addPlantAlert() {
+  addPlantAlert(icon, message, buttonText) {
     Swal.fire({
-      title: "Plant has been added to your garden!",
-      icon: "success",
-      button: "Aww yiss!",
+      title: message,
+      icon,
+      button: buttonText,
     });
   }
 
@@ -66,10 +69,11 @@ export default class AddPlantPage extends React.Component {
   render() {
     return (
       <div>
-        <section>
+        <section className="create-heading">
           <h1>Add a plant to your garden</h1>
+          <img src={plant9} alt={plant9} width="200rem" />
           <h4>Enter information below to add a plant to your garden</h4>
-          <div className="">
+          <div className="plant-input">
             <form
               className="add-plant-form"
               onSubmit={(e) => this.handleSubmit(e)}
@@ -124,7 +128,7 @@ export default class AddPlantPage extends React.Component {
                     onChange={this.onInputChange}
                   />
                   <br />
-                  <label htmlFor="">maintenance Level:</label>
+                  <label htmlFor="">Maintenance Level:</label>
                   <select
                     defaultValue={this.state.maintenance_level}
                     name="maintenance_level"
@@ -171,8 +175,7 @@ export default class AddPlantPage extends React.Component {
                   <br />
                   <label htmlFor="">Add an Image:</label>
                   <input
-                  //add default image
-                    placeholder="http://www.plant.image.com/coolplant.jpg"
+                    placeholder="add image url here"
                     value={this.state.image_url}
                     name="image_url"
                     type="text"
@@ -185,13 +188,15 @@ export default class AddPlantPage extends React.Component {
               <button
                 className="myButton"
                 type="submit"
-                onClick={this.addPlantAlert}
+                
               >
                 Add Plant!
               </button>
               <ViewGardenButton />
             </form>
           </div>
+
+          <img src={shelf} alt={shelf} width="500rem"/>
         </section>
       </div>
     );

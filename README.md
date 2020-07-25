@@ -137,3 +137,13 @@ Link to the [Live URL application](https://bloom-app.chandacodes.vercel.app)
 Link to the [API Repo](https://github.com/ChandaHubbard/bloom-api)  with API Documentation
 
 # 
+
+## Other features to implement in future versions
+
+[ ] Incorporate the `/PATCH` endpoint into the client. 
+[ ] Add Bootstrap
+[ ] Add react-burger-menu
+[ ] 
+[ ] 
+[ ] 
+[ ] 
