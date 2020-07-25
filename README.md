@@ -81,21 +81,22 @@ Link to the [Live URL application](https://bloom-app.chandacodes.vercel.app)
 <img src="./src/screens/landingpage1.png" alt="Image of Landing page" width="420px">
 <img src="./src/screens/landingpage2.png" alt="Image of Landing page" width="420px">
 
-<!-- #### Signup Button
+#### Signup Button
 
 - From the landing page click the signup button to view a signup alert.  
 - From there you can leave your email address to be notified of future app updates.  
 - This alert was created with <b>Sweet Alerts</b>
 
-<img src="screens/signup.png" alt="Image of signup alert" width="420px">
+<img src="./src/screens/signup.png" alt="Image of signup alert" width="420px">
 
-#### Review your budget screen
+#### View your garden screen
 
-- From the landing page click the <b>Review your Budget</b> button to navigate to the `/budget` page.  
-- On this page a list of expenses can be viewed in a <b>HTML table</b> that renders a database of expenses which were created with <b>PostgreSQL</b>.  
-- The database is pre-populated with default expenses.  
-- Click the <b>Delete</b> button to remove expenses.
-- Expenses can be added with the <b>Update Budget</b> button and then the app will navigate to the add and expense page.
+- From the landing page click the <b>View Your Garden</b> button to navigate to the `/view` page.  
+- On this page a list of plants can be viewed through <b>CSS carda</b> that renders a database of plants which were created with <b>PostgreSQL</b>.  
+- The database is pre-populated with default plants.  
+- Click the <b>Delete</b> button to remove a plant.
+- Click the <b>More Info</b> button to navigate to the `/information` page.
+- Plants can be added with the <b>Add Plant</b> button and then the app will navigate to the add a plant page.
 
 <img src="screens/expenses1.png" alt="Image of Expense Screen" width="420px">
 <img src="screens/expenses2.png" alt="Image of Expense Screen" width="420px">
@@ -118,7 +119,7 @@ Link to the [Live URL application](https://bloom-app.chandacodes.vercel.app)
 - If the user tries to navigate to a page that does not have a route `/*` the Not Found page will be displayed
 - This feature was created with <b>React Router</b>
 
-<img src="screens/notfound.png" alt="Image of 404 page" width="420px"> -->
+<img src="screens/notfound.png" alt="Image of 404 page" width="420px">
 
 # 
 
