@@ -14,6 +14,7 @@ Link to the [Live URL application](https://bloom-app.chandacodes.vercel.app)
 - React
     - Router
     - Context
+    - Axios
     - Libraries
         - Sweet Alerts
 - HTML
