@@ -95,6 +95,10 @@ Link to the [Live URL application](https://bloom-app.chandacodes.vercel.app)
 - On this page a list of plants can be viewed through <b>CSS carda</b> that renders a database of plants which were created with <b>PostgreSQL</b>.  
 - The database is pre-populated with default plants.  
 - Click the <b>Delete</b> button to remove a plant.
+    - Once the  <b>Delete</b> button has been clicked you will see an alert to confirm that you would like to delete the plant
+    - This alert was created with <b>Sweet Alerts</b>
+    <img src="./src/screens/deletecofirmation.png" alt="Image of delete alert" width="420px">
+    <img src="./src/screens/deletecofirmation2.png" alt="Image of delete alert" width="420px">
 - Click the <b>More Info</b> button to navigate to the `/information` page.
 - Plants can be added with the <b>Add A Plant</b> button and then the app will navigate to the add a plant page.
 
@@ -118,12 +122,23 @@ Link to the [Live URL application](https://bloom-app.chandacodes.vercel.app)
 
 <img src="./src/screens/newplant.png" alt="Image of new plant" width="420px">
 
+#### Plant Care Page
+
+- From the `/view` page you can select the <b>More Info</b> button to navigate to the `/information` page
+- This page provides general information about how to care for your plants
+- On this page you can select the <b>View your Garden</b> button to navigate back to the `/view` page
+
+<img src="./src/screens/infopage1.png" alt="Image of infopage" width="420px">
+<img src="./src/screens/infopage2.png" alt="Image of infopage" width="420px">
+<img src="./src/screens/infopage3.png" alt="Image of infopage" width="420px">
+
+
 #### Not Found screen
 
 - If the user tries to navigate to a page that does not have a route `/*` the Not Found page will be displayed
 - This feature was created with <b>React Router</b>
 
-<img src="screens/notfound.png" alt="Image of 404 page" width="420px">
+<img src="./src/screens/notfound.png" alt="Image of 404 page" width="420px">
 
 # 
 
