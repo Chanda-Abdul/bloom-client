@@ -4,7 +4,7 @@
   margin: 2rem;
   height: auto;
   width: 25rem;
-  border: .1rem solid #d3d3d3;
+  border: 0.1rem solid #d3d3d3;
   border-radius: 1rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -16,7 +16,7 @@
 .plant-header {
   background-color: #4c760a;
   border-top: 1rem solid #4c760a;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
   padding-bottom: 0.25rem;
   color: white;
   text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -52,6 +52,7 @@
 
 .plant-details {
   background-color: white;
+  text-align: justify;
   border-top: 1px dashed #4c760a;
   border-bottom: 1px dashed #4c760a;
   margin: 0rem;
@@ -69,7 +70,6 @@
 /* media queries */
 
 @media only screen and (min-width: 320px) {
-  
 }
 
 @media only screen and (min-width: 720px) {
@@ -88,46 +88,43 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
   }
-  
+
   .plant-header {
     background-color: #4c760a;
     border-top: 1rem solid #4c760a;
-    border-radius: 1rem;
     padding-bottom: 0.25rem;
     color: white;
     text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
-  
+
   .plant-info {
     display: flex;
     justify-content: space-evenly;
     background-color: white;
   }
-  
+
   .plant-image img {
     width: 15rem;
     border-radius: 1rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
       0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
-  
+
   .plant-image {
-    /* float: left; */
-  
     margin-top: 1rem;
     padding: 1rem;
   }
-  
+
   .plant-stats {
     float: right;
   }
-  
+
   .plant-stats ul {
     list-style: none;
     width: 10rem;
     line-height: 1.5rem;
   }
-  
+
   .plant-details {
     background-color: white;
     border-top: 1px dashed #4c760a;
@@ -135,7 +132,7 @@
     margin: 0rem;
     padding: 1rem;
   }
-  
+
   .gardenbutton {
     display: grid;
     grid-template-columns: auto auto;

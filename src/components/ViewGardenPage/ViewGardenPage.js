@@ -4,7 +4,7 @@ import PlantCard from "../PlantCard/PlantCard";
 import PlantContext from "../../contexts/PlantContext";
 import cacti from "../../images/cacti.png";
 import plant2 from "../../images/plant2.png";
-import './ViewGardenPage.css'
+import "./ViewGardenPage.css";
 
 export default class ViewGardenPage extends React.Component {
   static contextType = PlantContext;
@@ -15,9 +15,9 @@ export default class ViewGardenPage extends React.Component {
       <div className="top">
         <section className="garden-heading">
           <h1>Hello...</h1>
-          
+
           <p>Welcome to your garden!</p>
-          <img src={cacti} alt={cacti} width="150rem"/>
+          <img src={cacti} alt={cacti} width="150rem" />
           <p>
             All of the plants that are currently in your garden are listed
             below.
@@ -28,31 +28,30 @@ export default class ViewGardenPage extends React.Component {
           <p>
             Click the 'More Info' button to view more indoor gardening tips.
           </p>
-          <img src={plant2} alt={plant2} width="150rem"/>
-          <br/>
+          <img src={plant2} alt={plant2} width="150rem" />
+          <br />
           <p>Add another plant to your garden here</p>
-          <br/>
-          
+          <br />
+
           <Link to="/add">
             <button className="myButton green">Add A Plant</button>
           </Link>
-          <br/>
-          <br/>
+          <br />
+          <br />
+        </section>
+        <div className="garden-section">
+          <section className="container-garden">
+            {garden.map((item) => (
+              <PlantCard garden={item} key={item.id} />
+            ))}
           </section>
-          <div className="garden-section">
-            <section className="container-garden">
-              {garden.map((item) => (
-                <PlantCard garden={item} key={item.id} />
-              ))}
-            </section>
-            </div>
-            
-          <br/>
-          <br/>
-          <br/>
-          <br/>
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
-      
     );
   }
 }

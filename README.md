@@ -5,7 +5,7 @@ Chanda Hubbard
 
 ## Summary
 
-<!-- While enrolled in Thinkful's Web Development bootcamp I created this Full-stack Capstone project.  Easy budget is an interactive web application that was created to view and manage your monthly budget.  This app was created so that you can view all of your monthly expenses and figure out whether they align with your financial goals. -->
+While enrolled in Thinkful's Web Development bootcamp I created this Full-stack Capstone project.  Bloom is an interactive web application that was created to view and manage your plant collection.  This app was created so that you can view all of your plants, and keep track of thier care and maintenance.
 
 Link to the [Live URL application](https://bloom-app.chandacodes.vercel.app)
 
@@ -32,31 +32,31 @@ Link to the [Live URL application](https://bloom-app.chandacodes.vercel.app)
 
 ## User Stories 
 
-<!-- <b>Landing Page</b>
+<b>Landing Page</b>
 
 - As a new user
     - I want to understand what this app does and if it will be useful for me.
-    - I would like to create a budget
+    - I would like to create a garden
 - As a returning user
-    - I would like to learn more about finances
-    - I would like to update my budget
+    - I would like to learn more about my plants
+    - I would like to update my garden
 
-<b>Review your budget Screen</b>
+<b>View your garden screen</b>
 
 - As a new user
-    - I would like to see what a typical budget looks like
+    - I would like to see what a sample plant collection "garden" looks like
 - As a returning user
-    - I would like to review my current budget
+    - I would like to review my current plant collection
 
-<b>Create an expense screen</b>
+<b>Add a plant screen</b>
 
 - As a returning user
-    - I would like to add a new expense to my budget
+    - I would like to add a new plant to my garden
 
 <b>Not Found screen</b>
 
 - As a new user AND As a returning user
-    - I would like to know that the page I navigated to does not exist  -->
+    - I would like to know that the page I navigated to does not exist 
 
 ## React Component Structure
 - index.js (stateless)
@@ -72,24 +72,14 @@ Link to the [Live URL application](https://bloom-app.chandacodes.vercel.app)
                         - PlantCarePage.js
                 - AddPlantPage.js
         - NotFoundPage.js
-            
-            <!-- - GoToBudgetButton.js
-            - SidePanel.js
-                - BudgetPage.js
-                - UpdateBudgetButton.js
-                    - CreateExpensePage.js
-                        - GoToBudgetButton.js
-            - Overview.js -->
         - Footer.js
 
 # 
 
 #### Landing Page
 
-<!-- <img src="screens/landing.png" alt="Image of Landing page" width="420px">
-<img src="screens/landing2.png" alt="Image of Landing page" width="420px">
-<img src="screens/landing3.png" alt="Image of Landing page" width="420px">
-<img src="screens/landing4.png" alt="Image of Landing page" width="420px"> -->
+<img src="./src/screens/landingpage1.png" alt="Image of Landing page" width="420px">
+<img src="./src/screens/landingpage2.png" alt="Image of Landing page" width="420px">
 
 <!-- #### Signup Button
 
@@ -141,9 +131,12 @@ Link to the [API Repo](https://github.com/ChandaHubbard/bloom-api)  with API Doc
 ## Other features to implement in future versions
 
 [ ] Incorporate the `/PATCH` endpoint into the client. 
+
 [ ] Add Bootstrap
+
 [ ] Add react-burger-menu
+
+<!-- [ ] 
 [ ] 
 [ ] 
-[ ] 
-[ ] 
+[ ]  -->

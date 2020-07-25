@@ -5,12 +5,9 @@ body {
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
-  /* Set a background color that will be displayed
-     while the background image is loading */
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
 }
 
 html {
@@ -63,7 +60,9 @@ form {
 }
 
 .landing-heading,
-.garden-heading, .info-heading, .create-heading {
+.garden-heading,
+.info-heading,
+.create-heading {
   width: 50rem;
   background-color: white;
   margin-top: 15em;
@@ -170,20 +169,20 @@ nav {
 
 @media only screen and (min-width: 320px) {
   .landing-heading,
-.garden-heading, .info-heading, .create-heading {
-  width: 15rem;
-  background-color: white;
-  margin-top: 10em;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 10em;
-  padding: 5em;
-  border-radius: 1rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
-
+  .garden-heading,
+  .info-heading,
+  .create-heading {
+    width: 15rem;
+    background-color: white;
+    margin-top: 10em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10em;
+    padding: 5em;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
 }
 
 @media only screen and (min-width: 720px) {
@@ -192,7 +191,9 @@ nav {
   }
 
   .landing-heading,
-  .garden-heading, .info-heading, .create-heading {
+  .garden-heading,
+  .info-heading,
+  .create-heading {
     width: 20rem;
     background-color: white;
     margin-top: 10em;
@@ -204,8 +205,6 @@ nav {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
       0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
-
-  
 }
 
 @media only screen and (min-width: 980px) {
@@ -214,7 +213,9 @@ nav {
   }
 
   .landing-heading,
-  .garden-heading, .info-heading, .create-heading {
+  .garden-heading,
+  .info-heading,
+  .create-heading {
     width: 25rem;
     background-color: white;
     margin-top: 10em;
@@ -226,6 +227,4 @@ nav {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
       0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
-
- 
 }

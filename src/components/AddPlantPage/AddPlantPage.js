@@ -196,7 +196,6 @@ export default class AddPlantPage extends React.Component {
             </form>
             <img src={shelf} alt={shelf} width="300rem" />
           </div>
-          
         </section>
       </div>
     );

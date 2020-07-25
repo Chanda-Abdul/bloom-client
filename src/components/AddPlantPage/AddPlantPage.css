@@ -1,37 +1,38 @@
-input, fieldset, form {
-    padding: .25rem;
-    margin: .25rem;
-    font-family: 'Open Sans', sans-serif;
-    
+input,
+fieldset,
+form {
+  padding: 0.25rem;
+  margin: 0.25rem;
+  font-family: "Open Sans", sans-serif;
 }
 
 fieldset {
-    margin-bottom: 1rem;
-    border-radius: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
 }
 
 label {
-    padding: 1rem;
-    margin: 1rem;
+  padding: 1rem;
+  margin: 1rem;
 }
 
-input, select {
-    padding: .25rem;
-    margin: .5rem;
-    font-size: .75rem;
-    border-width: 1px;
-    border-color: #022D57;
-    background-color: white;
-    color: #000000;
-    border-style: solid;
-    border-radius: 0px;
-    box-shadow: 0px 0px 5px #863862;
-    text-shadow: 0px 0px 1px rgba(66,66,66,.75);
-    width: 10rem;
+.input-form-group {
+  text-align: right;
+  padding-right: 2rem;
 }
-/* form {
-    width: 50%;
-    
-} */
 
-
+input,
+select {
+  padding: 0.1rem;
+  margin: 0.4rem;
+  font-size: 0.75rem;
+  border-width: 1px;
+  border-color: #022d57;
+  background-color: white;
+  color: #000000;
+  border-style: solid;
+  border-radius: 0px;
+  box-shadow: 0px 0px 5px #863862;
+  text-shadow: 0px 0px 1px rgba(66, 66, 66, 0.75);
+  width: 6rem;
+}
