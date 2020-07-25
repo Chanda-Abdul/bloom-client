@@ -98,8 +98,8 @@ Link to the [Live URL application](https://bloom-app.chandacodes.vercel.app)
 - Click the <b>More Info</b> button to navigate to the `/information` page.
 - Plants can be added with the <b>Add Plant</b> button and then the app will navigate to the add a plant page.
 
-<img src="screens/expenses1.png" alt="Image of Expense Screen" width="420px">
-<img src="screens/expenses2.png" alt="Image of Expense Screen" width="420px">
+<img src="./src/screens/viewgarden1.png" alt="Image of viewgarden" width="420px">
+<img src="./src/screens/viewgarden2.png" alt="Image of viewgarden" width="420px">
 
 #### Create an expense screen
 
