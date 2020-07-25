@@ -92,7 +92,7 @@ Link to the [Live URL application](https://bloom-app.chandacodes.vercel.app)
 #### View your garden screen
 
 - From the landing page click the <b>View Your Garden</b> button to navigate to the `/view` page.  
-- On this page a list of plants can be viewed through <b>CSS carda</b> that renders a database of plants which were created with <b>PostgreSQL</b>.  
+- On this page a list of plants can be viewed through <b>CSS cards</b> that renders a database of plants which were created with <b>PostgreSQL</b>.  
 - The database is pre-populated with default plants.  
 - Click the <b>More Info</b> button to navigate to the `/information` page.
 - Plants can be added with the <b>Add A Plant</b> button and then the app will navigate to the add a plant page.
