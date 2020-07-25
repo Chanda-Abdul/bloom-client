@@ -94,16 +94,17 @@ Link to the [Live URL application](https://bloom-app.chandacodes.vercel.app)
 - From the landing page click the <b>View Your Garden</b> button to navigate to the `/view` page.  
 - On this page a list of plants can be viewed through <b>CSS carda</b> that renders a database of plants which were created with <b>PostgreSQL</b>.  
 - The database is pre-populated with default plants.  
-- Click the <b>Delete</b> button to remove a plant.
-    - Once the  <b>Delete</b> button has been clicked you will see an alert to confirm that you would like to delete the plant
-    - This alert was created with <b>Sweet Alerts</b>
-    <img src="./src/screens/deleteconfirmation.png" alt="Image of delete alert" width="420px">
-    <img src="./src/screens/deleteconfirmation2.png" alt="Image of delete alert" width="420px">
 - Click the <b>More Info</b> button to navigate to the `/information` page.
 - Plants can be added with the <b>Add A Plant</b> button and then the app will navigate to the add a plant page.
 
 <img src="./src/screens/viewgarden1.png" alt="Image of viewgarden" width="420px">
 <img src="./src/screens/viewgarden2.png" alt="Image of viewgarden" width="420px">
+
+- Click the <b>Delete</b> button to remove a plant.
+    - Once the  <b>Delete</b> button has been clicked you will see an alert to confirm that you would like to delete the plant
+    - This alert was created with <b>Sweet Alerts</b>
+    <img src="./src/screens/deleteconfirmation.png" alt="Image of delete alert" width="420px">
+    <img src="./src/screens/deleteconfirmation2.png" alt="Image of delete alert" width="420px">
 
 #### Add a plant screen
 
@@ -114,9 +115,8 @@ Link to the [Live URL application](https://bloom-app.chandacodes.vercel.app)
 <img src="./src/screens/addplant.png" alt="Image of add plant page" width="420px">
 
 - Once the <b>Add Plant!</b> button has been click an alert will appear to let you know that the plant has been created. 
-- This alert was created with <b>Sweet Alerts</b>
-
-<img src="./src/screens/addplantalert.png" alt="Image of addplant feedback alert" width="420px">
+    - This alert was created with <b>Sweet Alerts</b>
+    <img src="./src/screens/addplantalert.png" alt="Image of addplant feedback alert" width="420px">
 
 - You can then navigate back to the `/view` screen to view the new plant that was created
 
