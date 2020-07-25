@@ -96,23 +96,27 @@ Link to the [Live URL application](https://bloom-app.chandacodes.vercel.app)
 - The database is pre-populated with default plants.  
 - Click the <b>Delete</b> button to remove a plant.
 - Click the <b>More Info</b> button to navigate to the `/information` page.
-- Plants can be added with the <b>Add Plant</b> button and then the app will navigate to the add a plant page.
+- Plants can be added with the <b>Add A Plant</b> button and then the app will navigate to the add a plant page.
 
 <img src="./src/screens/viewgarden1.png" alt="Image of viewgarden" width="420px">
 <img src="./src/screens/viewgarden2.png" alt="Image of viewgarden" width="420px">
 
-#### Create an expense screen
+#### Add a plant screen
 
-- Once the <b>Update Budget</b> button is clicked the app navigates to the `/create` page
-- Enter information for the new expense in the form and click the <b>Add Expense</b> button
-- The <b>Review your budget</b> button can be clicked to navigate back to the `/budget` page
+- Once the <b>Add A Plant</b> button is clicked the app navigates to the `/add` page
+- Enter information for the new plant in the form and click the <b>Add Plant!</b> button
+- The <b>View Your Garden</b> button can be clicked to navigate back to the `/view` page
 
-<img src="screens/addexpense.png" alt="Image of add xpense page" width="420px">
+<img src="./src/screens/addplant.png" alt="Image of add plant page" width="420px">
 
-- Once the <b>Add Expense</b> button has been click an alert will appear to let you know that the expense has been created. 
+- Once the <b>Add Plant!</b> button has been click an alert will appear to let you know that the plant has been created. 
 - This alert was created with <b>Sweet Alerts</b>
 
-<img src="screens/expenseFeedback.png" alt="Image of Expense feedback alert" width="420px">
+<img src="./src/screens/addplantalert.png" alt="Image of addplant feedback alert" width="420px">
+
+- You can then navigate back to the `/view` screen to view the new plant that was created
+
+<img src="./src/screens/newplant.png" alt="Image of new plant" width="420px">
 
 #### Not Found screen
 
