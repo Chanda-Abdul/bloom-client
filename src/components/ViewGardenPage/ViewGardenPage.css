@@ -1,18 +1,19 @@
 .top {
-  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 0rem;
 }
 
 .garden-heading {
-  margin-bottom: 2rem;
-  width: 40rem;
+  margin-bottom: 1rem;
+  width: 20rem;
 }
 
 .garden-section {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
   margin-top: 0rem;
 }
 
@@ -27,4 +28,52 @@
   border-radius: 0.25rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* media queries */
+
+@media only screen and (min-width: 320px) {
+  .container-garden {
+    display: grid;
+    grid-template-columns: auto;
+    margin-right: auto;
+  margin-left: auto;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .garden-heading {
+    margin-bottom: 2rem;
+    width: 40rem;
+  }
+
+  .container-garden {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    margin-top: 0rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+}
+
+@media only screen and (min-width: 980px) {
+
+  .container-garden {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    margin-top: 0rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
 }

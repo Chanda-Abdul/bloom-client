@@ -1,6 +1,5 @@
 import React from "react";
 import ViewGardenButton from "../ViewGardenButton/ViewGardenButton";
-
 import plant2 from "../../images/plant2.png";
 import plant6 from "../../images/plant6.png";
 import plant9 from "../../images/plant9.png";
@@ -36,7 +35,7 @@ export default class LandingPage extends React.Component {
         <p>As you aquire new plants, you can add them to your garden.</p>
         <br/>
         
-        <img src={environment} alt={environment} width="350rem"/>
+        <img src={environment} alt={environment} width="300rem"/>
         <br/>
         <ViewGardenButton />
         <br/>

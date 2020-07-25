@@ -18,7 +18,8 @@ export default class AddPlantPage extends React.Component {
     maintenance_level: 1,
     water_requirements: 1,
     light_conditions: 1,
-    image_url: "https://images.assetsdelivery.com/compings_v2/morphart/morphart1910/morphart191008681.jpg",
+    image_url:
+      "https://images.assetsdelivery.com/compings_v2/morphart/morphart1910/morphart191008681.jpg",
   };
 
   constructor(props) {
@@ -44,17 +45,20 @@ export default class AddPlantPage extends React.Component {
       light_conditions: this.state.light_conditions,
       image_url: this.state.image_url,
     };
-   console.log(this.state, "this.state")
+    console.log(this.state, "this.state");
     this.plantService
       .createNewPlant(this.state)
       .then((plant) => {
-        this.addPlantAlert("success", "Plant has been added to your garden!", "Aww yiss!")
+        this.addPlantAlert(
+          "success",
+          "Plant has been added to your garden!",
+          "Aww yiss!"
+        );
         this.context.setPlant(plant);
       })
       .catch((err) => {
-        this.addPlantAlert("error", "Plant couldn't be added!", "cancel")
+        this.addPlantAlert("error", "Plant couldn't be added!", "cancel");
       });
-    
   };
 
   addPlantAlert(icon, message, buttonText) {
@@ -64,7 +68,6 @@ export default class AddPlantPage extends React.Component {
       button: buttonText,
     });
   }
-
 
   render() {
     return (
@@ -82,7 +85,8 @@ export default class AddPlantPage extends React.Component {
                 <legend>Add Plant: </legend>
                 <p>
                   Just enter the plant name, scientific name, and details,
-                  maintenance and image of the new plant to add it to your garden
+                  maintenance and image of the new plant to add it to your
+                  garden
                 </p>
                 <div className="input-form-group">
                   <label htmlFor="">Plant Name:</label>
@@ -185,18 +189,14 @@ export default class AddPlantPage extends React.Component {
                   <br />
                 </div>
               </fieldset>
-              <button
-                className="myButton"
-                type="submit"
-                
-              >
+              <button className="myButton" type="submit">
                 Add Plant!
               </button>
               <ViewGardenButton />
             </form>
+            <img src={shelf} alt={shelf} width="300rem" />
           </div>
-
-          <img src={shelf} alt={shelf} width="500rem"/>
+          
         </section>
       </div>
     );

@@ -1,9 +1,10 @@
 import React from "react";
+import notfound from "../../images/notfound.png";
 
 export default class NotFoundPage extends React.Component {
   render() {
     return (
-      <section>
+      <section className="landing-heading">
         <div>
           <h2>Sorry, page not found!</h2>
           <p>
@@ -11,7 +12,7 @@ export default class NotFoundPage extends React.Component {
             navigation menu
           </p>
 
-          {/* <img className="notfound" src={notfound} alt="404"/> */}
+          <img src={notfound} alt="404" width="300rem"/>
           <section id="hero-footer" />
         </div>
       </section>
