@@ -172,7 +172,7 @@ nav {
   .garden-heading,
   .info-heading,
   .create-heading {
-    width: 15rem;
+    width: fit-content;
     background-color: white;
     margin-top: 10em;
     margin-right: auto;
