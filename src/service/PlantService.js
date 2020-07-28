@@ -17,8 +17,8 @@ export default class PlantService {
 
   removePlant(id) {
     return axios.delete(config.API_BASE_URL + "/plants/" + id).then((res) => {
-      console.log(res);
-      console.log(res.data);
-    });
+      return (res.data);
+    }
+    );
   }
 }

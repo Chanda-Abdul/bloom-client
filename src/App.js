@@ -23,9 +23,7 @@ export default class App extends React.Component {
   }
 
   setPlant = (garden) => {
-    this.setState({ garden: [...this.state.garden, garden] },
-      () => console.log(this.state.garden)
-      );
+    this.setState({ garden: [...this.state.garden, garden] });
   };
 
   removePlant = (id) => {

@@ -1,19 +1,8 @@
 .top {
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 0rem;
-}
-
-.garden-heading {
-  margin-bottom: 1rem;
-  width: 20rem;
+  display: grid;
 }
 
 .garden-section {
-  display: flex;
-  margin-right: auto;
-  margin-left: auto;
-  width: 80%;
   margin-top: 0rem;
 }
 

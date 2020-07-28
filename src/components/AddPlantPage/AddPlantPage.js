@@ -45,7 +45,7 @@ export default class AddPlantPage extends React.Component {
       light_conditions: this.state.light_conditions,
       image_url: this.state.image_url,
     };
-    console.log(this.state, "this.state");
+    
     this.plantService
       .createNewPlant(this.state)
       .then((plant) => {
@@ -83,11 +83,11 @@ export default class AddPlantPage extends React.Component {
             >
               <fieldset name="plant-form">
                 <legend>Add Plant: </legend>
-                <p>
+                <h6>
                   Just enter the plant name, scientific name, and details,
-                  maintenance and image of the new plant to add it to your
+                  maintenance and image address url of the new plant to add it to your
                   garden
-                </p>
+                </h6>
                 <div className="input-form-group">
                   <label htmlFor="">Plant Name:</label>
                   <input
@@ -122,7 +122,7 @@ export default class AddPlantPage extends React.Component {
                     required
                   />
                   <br />
-                  <label htmlFor="">Plant Type:</label>
+                  <label htmlFor="">Plant Type: <p>(optional)</p></label>
                   <input
                     placeholder="Plant Type(optional)"
                     name="plant_type"
@@ -177,7 +177,8 @@ export default class AddPlantPage extends React.Component {
                     <option value="4">Full Sun</option>
                   </select>
                   <br />
-                  <label htmlFor="">Add an Image:</label>
+                  <label htmlFor="">Add an Image: <p>(optional)</p></label>
+
                   <input
                     placeholder="add image url here"
                     value={this.state.image_url}
@@ -187,6 +188,7 @@ export default class AddPlantPage extends React.Component {
                     onChange={this.onInputChange}
                   />
                   <br />
+                  <p></p>
                 </div>
               </fieldset>
               <button className="myButton" type="submit">
