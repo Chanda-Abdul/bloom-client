@@ -1,13 +1,13 @@
 # Thinkful Full Stack Capstone - Bloom App Client
 
 ## Programmer
-Chanda Hubbard
+Chanda Abdul
 
 ## Summary
 
 While enrolled in Thinkful's Web Development bootcamp I created this Full-stack Capstone project.  Bloom is an interactive web application that was created to view and manage your plant collection.  This app was created so that you can view all of your plants, and keep track of thier care and maintenance.
 
-Link to the [Live URL application](https://bloom-app.chandacodes.vercel.app)
+<!-- Link to the [Live URL application](https://bloom-app.chandacodes.vercel.app) -->
 
 ## Technology Used
 #### Front-end
